@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+}
+.card {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.card .box {
+    width: 50%;
+}
+
+.box-left {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.box-left h1 {
+    color: hsl(241, 100%, 89%);
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.box-left .degree {
+    margin: 0 auto;
+    background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.box-left .degree p {
+    color: hsl(241, 100%, 89%);
+    display: flex;
+    flex-direction: column;
+}
+.box-left .degree p  span {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
+.box-left h2 {
+    margin: 20px 0;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.box-left p {
+    color: hsl(241, 100%, 89%);
+}
+.box-right {
+    background: white;
+    padding: 28px;
+    border-radius: 0 20px 20px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -ms-border-radius: 0 20px 20px 0;
+    -o-border-radius: 0 20px 20px 0;
+    box-shadow: 16px 20px 20px 2px hsl(221deg 100% 96%);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        height: 100%;
+        justify-content: initial;
+    }
+    .card .box {
+        width: 100%;
+    }
+    .box-left {
+        border-radius: 0 0 30px 30px;
+        -webkit-border-radius: 0 0 30px 30px;
+        -moz-border-radius: 0 0 30px 30px;
+        -ms-border-radius: 0 0 30px 30px;
+        -o-border-radius: 0 0 30px 30px;
+    }
+    .box-right {
+        box-shadow: none;
+    }
+}
+.box-right h1 {
+    color: hsl(224, 30%, 27%);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.box-right .continer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.box-right .continer .text {
+    display: flex;
+    align-items: center;
+}
+.box-right .continer .text p {
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.red {
+    background-color: hsl(0deg 100% 67% / 10%);
+}
+.red .text > p {
+    color: hsl(0, 100%, 67%);
+}
+.yellow {
+    background-color: hsl(39deg 100% 56% / 10%);
+}
+.yellow .text > p {
+    color: hsl(39, 100%, 56%);
+}
+.green {
+    background-color: hsl(166deg 100% 37% / 10%);
+}
+.green .text > p {
+    color: hsl(166, 100%, 37%);
+}
+.blue {
+    background-color: hsl(234deg 85% 45% / 10%);
+}
+.blue .text > p {
+    color: hsl(234, 85%, 45%);
+}
+
+.continer > p {
+    color: hsl(241, 100%, 89%);
+}
+.continer > p > span {
+    color: hsl(224, 30%, 27%);
+}
+
+.box-right a {
+    text-decoration: none;
+    text-transform: capitalize;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.box-right a:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
